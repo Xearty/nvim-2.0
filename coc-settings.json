@@ -1,0 +1,7 @@
+{
+    "explorer.icon.enableVimDevicons": false,
+    "explorer.previewAction.onHover": false,
+    "explorer.icon.enableNerdfont": true,
+    "explorer.file.showHiddenFiles": false,
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true
+}
