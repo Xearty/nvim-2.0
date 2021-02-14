@@ -1,16 +1,17 @@
+" Theme
+" let g:airline_theme = 'codedark'
+let g:airline_theme = 'gruvbox_material'
+
 set noshowmode
 let g:airline_extensions = ['branch']
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'dark'
 let g:airline_highlighting_cache = 1
-
 
 " let g:airline_right_sep='<'
 " let g:airline_left_sep='>'
 let g:airline_detect_modified=1
 
 let g:airline_inactive_collapse=1
-let g:airline_theme='codedark'
 
 let g:airline_mode_map = {
             \ '__'     : '-',

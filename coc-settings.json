@@ -3,5 +3,6 @@
     "explorer.previewAction.onHover": false,
     "explorer.icon.enableNerdfont": true,
     "explorer.file.showHiddenFiles": false,
-    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+    "suggest.autoTrigger": "none"
 }

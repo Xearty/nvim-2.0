@@ -44,6 +44,7 @@ set complete-=i                         " Disable scanning included files
 set complete-=t                         " Disable searching tags
 set synmaxcol=200
 set cursorline
+
 " set colorcolumn=80                    " Set if you want a vertical line on the 80th symbol
 
  " Disabling line numbers in netrw(does not affect ranger.vim on startup)
@@ -62,8 +63,8 @@ autocmd TermOpen * setlocal nonumber norelativenumber signcolumn=no
 autocmd BufWritePost $MYVIMRC source $MYVIMRC
 
 " Smarter cursorline
-autocmd InsertLeave,WinEnter * set cursorline
-autocmd InsertEnter,WinLeave * set nocursorline
+" autocmd InsertLeave,WinEnter * set cursorline
+" autocmd InsertEnter,WinLeave * set nocursorline
 
 " Place the cursor where it was the last time you closed the file
 autocmd BufReadPost *
@@ -76,5 +77,26 @@ autocmd BufReadPost *
 source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/keybindings.vim
 
+" GUI settings
+" set guifont=Hack\ Nerd\ Font:h16
+set guifont=JetBrains\ Mono:h14
+
 " !important settings :D
 set signcolumn=no
+
+" Trigger a highlight in the appropriate direction when pressing these keys:
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+
+" Trigger a highlight only when pressing f and F.
+let g:qs_highlight_on_keys = ['f', 'F']
+
+let g:gruvbox_material_background = 'hard'
+let g:gruvbox_material_palette = 'mix'
+let g:gruvbox_material_enable_bold = 0
+let g:gruvbox_material_transparent_background = 0
+let g:gruvbox_material_diagnostic_line_highlight = 0
+let g:gruvbox_material_current_word = 'bold'
+let g:gruvbox_material_better_performance = 1
+let g:gruvbox_material_enable_italic = 1
+color gruvbox-material
+
